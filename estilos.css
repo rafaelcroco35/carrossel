@@ -1,0 +1,107 @@
+*{   font-family: Arial, 'Helvetica', sans-serif;}
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-image: url(img/fundo.jpg);
+}
+
+h1{
+    text-align: center;
+ 
+    color: whitesmoke;
+   padding-top: 20px;
+   text-transform: uppercase;
+    }
+
+
+
+.container{
+    height: 500px;
+    width: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: dashed whitesmoke 2.5px;
+    box-shadow: 5px 5px 5px rgb(20, 20, 20);
+}
+
+.bar{
+    background-color: rgba(32, 32, 32, 0.5);
+    width: 30px;
+    height: 5px;
+    margin: 7px;
+    transition: .3s;
+
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display:flex;
+}
+
+.bar:hover{
+    background-color: rgba(32, 32, 32, 1);
+
+}
+
+input{
+    display: none;
+
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .3s;
+
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -16.6666666667% ;
+
+}
+#imagem3:checked ~ .img1 {
+    margin-left: -33.3333333334% ;
+
+}
+#imagem4:checked ~ .img1 {
+    margin-left: -50% ;
+
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -66.6666666667% ;
+
+}
+#imagem6:checked ~ .img1 {
+    margin-left: -83.3333333333% ;
+
+}
+
+footer{
+    padding-top: 525Px;
+    text-align: center;
+    color: whitesmoke;
+}
